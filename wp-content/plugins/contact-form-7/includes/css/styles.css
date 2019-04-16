@@ -14,7 +14,7 @@ div.wpcf7 .screen-reader-response {
 	border: 0;
 }
 
-div.wpcf7-response-output {
+/* div.wpcf7-response-output {
 	margin: 2em 0.5em 1em;
 	padding: 0.2em 1em;
 	border: 2px solid #ff0000;
@@ -31,22 +31,23 @@ div.wpcf7-aborted {
 
 div.wpcf7-spam-blocked {
 	border: 2px solid #ffa500;
-}
+} */
 
-div.wpcf7-validation-errors,
+/* div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
 	border: 2px solid #f7e700;
-}
+} */
 
 .wpcf7-form-control-wrap {
 	position: relative;
 }
 
 span.wpcf7-not-valid-tip {
-	color: #f00;
+	/* color: #f00; */
 	font-size: 1em;
 	font-weight: normal;
 	display: block;
+	margin: 0.5rem 2rem;
 }
 
 .use-floating-validation-tip span.wpcf7-not-valid-tip {

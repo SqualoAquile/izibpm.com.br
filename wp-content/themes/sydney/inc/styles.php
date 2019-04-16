@@ -25,7 +25,7 @@ function sydney_custom_styles($custom) {
 	if ( (get_theme_mod('front_header_type','slider') == 'nothing' && is_front_page()) || (get_theme_mod('site_header_type') == 'nothing' && !is_front_page()) ) {
 		$menu_bg_color = get_theme_mod( 'menu_bg_color', '#000000' );
 		$rgba 	= sydney_hex2rgba($menu_bg_color, 0.9);
-		$custom .= ".site-header { background-color:" . esc_attr($rgba) . ";}" . "\n";
+		// $custom .= ".site-header { background-color:" . esc_attr($rgba) . ";}" . "\n";
 	}
 	//Fonts
 	$body_fonts = get_theme_mod('body_font_family');	

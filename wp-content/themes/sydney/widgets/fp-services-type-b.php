@@ -114,7 +114,8 @@ class Sydney_Services_Type_B extends WP_Widget {
 					<?php while ( $services->have_posts() ) : $services->the_post(); ?>
 						<?php $icon = get_post_meta( get_the_ID(), 'wpcf-service-icon', true ); ?>
 						<?php $link = get_post_meta( get_the_ID(), 'wpcf-service-link', true ); ?>
-						<div class="service clearfix <?php echo $cols_no; ?>">
+						<div class="service clearfix wow animated fadeInUp <?php echo $cols_no; ?>">
+							<a href="<?php echo esc_url($link); ?>"></a>
 							<div class="list-item clearfix">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<div class="service-thumb">
@@ -147,13 +148,16 @@ class Sydney_Services_Type_B extends WP_Widget {
 										<?php the_excerpt(); ?>
 									<?php endif; ?>
 								</div><!--.info-->	
+								<div class="seta-para-direita">
+									<img src="<?php echo get_template_directory_uri() . '/images/SetaparaDireita.png' ?>" alt="">
+								</div>
 							</div>
 						</div>
 					<?php endwhile; ?>
 				</div>	
 
 				<?php if ($see_all != '') : ?>
-					<a href="<?php echo esc_url($see_all); ?>" class="roll-button more-button">
+					<a href="<?php echo esc_url($see_all); ?>" class="roll-button more-button wow animated fadeIn">
 						<?php if ($see_all_text) : ?>
 							<?php echo $see_all_text; ?>
 						<?php else : ?>

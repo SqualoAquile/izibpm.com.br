@@ -17,9 +17,10 @@
 		<?php the_title( '<h1 class="title-post entry-title">', '</h1>' ); ?>
 
 		<?php if (get_theme_mod('hide_meta_single') != 1 ) : ?>
-		<div class="single-meta">
+		<!-- <div class="single-meta">
 			<?php sydney_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div> -->
+		<!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 

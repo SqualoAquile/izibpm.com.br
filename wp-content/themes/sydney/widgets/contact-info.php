@@ -60,17 +60,17 @@ class Sydney_Contact_Info extends WP_Widget {
 		if ( $title ) echo $before_title . $title . $after_title;
 		
 		if( ($address) ) {
-			echo '<div class="contact-address">';
+			echo '<div class="contact-address wow animated fadeInDown">';
 			echo '<span><i class="fa fa-home"></i></span>' . $address;
 			echo '</div>';
 		}
 		if( ($phone) ) {
-			echo '<div class="contact-phone">';
+			echo '<div class="contact-phone wow animated fadeInDown" data-wow-delay="0.3s">';
 			echo '<span><i class="fa fa-phone"></i></span>' . $phone;
 			echo '</div>';
 		}
 		if( ($email) ) {
-			echo '<div class="contact-email">';
+			echo '<div class="contact-email wow animated fadeInDown" data-wow-delay="0.8s">';
 			echo '<span><i class="fa fa-envelope"></i></span>' . '<a href="mailto:' . $email . '">' . $email . '</a>';
 			echo '</div>';
 		}				

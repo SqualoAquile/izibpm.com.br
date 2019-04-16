@@ -287,7 +287,6 @@ Content
 	padding-bottom: 15px;
 	background-color: #fff;
 }
-.page .page-wrap .content-wrapper,
 .single .page-wrap .content-wrapper {
 	padding: 30px;
 }
@@ -422,7 +421,7 @@ Repeatable Patterns
 				box-sizing: border-box;
 	}
 	body {
-		font: 14px/1.7 "Source Sans Pro", sans-serif;
+		font: 14px/1.7 "Futura", "Arial", sans-serif;
 		background: #fff;
 		color: #767676;
 	}
@@ -467,12 +466,12 @@ Repeatable Patterns
 	strong {
 		font-weight: 600;
 	}
-	h1 { font: 52px/1.1 "Raleway", sans-serif;}
-	h2 { font: 42px/1.1 "Raleway", sans-serif;}
-	h3 { font: 32px/1.1 "Raleway", sans-serif;}
-	h4 { font: 25px/1.1 "Raleway", sans-serif;}
-	h5 { font: 20px/1.1 "Raleway", sans-serif;}
-	h6 { font: 18px/1.1 "Raleway", sans-serif;}
+	h1 { font: 52px/1.1 "Futura", "Arial", sans-serif;}
+	h2 { font: 42px/1.1 "Futura", "Arial", sans-serif;}
+	h3 { font: 32px/1.1 "Futura", "Arial", sans-serif;}
+	h4 { font: 25px/1.1 "Futura", "Arial", sans-serif;}
+	h5 { font: 20px/1.1 "Futura", "Arial", sans-serif;}
+	h6 { font: 18px/1.1 "Futura", "Arial", sans-serif;}
 	h1, h2, h3, h4, h5, h6 {
 		color: #443f3f;
 		font-weight: 600;
@@ -486,7 +485,7 @@ Repeatable Patterns
 	input[type="submit"] {
 		position: relative;
 		display: inline-block;
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 		font-size: 13px;
 		line-height: 24px;
 		font-weight: 700;
@@ -647,6 +646,12 @@ Header
 	}
 	.site-logo {
 		max-height: 100px;
+		padding: 5px 0;
+		-webkit-transition: all 0.3s ease-out;
+		   -moz-transition: all 0.3s ease-out;
+		    -ms-transition: all 0.3s ease-out;
+		     -o-transition: all 0.3s ease-out;
+		        transition: all 0.3s ease-out;
 	}
 	.site-header {
 		position: fixed;
@@ -722,7 +727,7 @@ Header
 	}
 
 	.site-header.float-header {
-		background-color: rgba(0,0,0,0.9);
+		background-color: rgba(255,255,255,0.9);
 		padding: 5px;
 	}
 	.site-header.float-header #mainnav {
@@ -762,19 +767,19 @@ Header
 	#mainnav ul li a {
 		position: relative;
 		display: block;
-		font-size: 14px;
-		font-family: "Raleway", sans-serif;
+		font-size: 16px;
+		font-family: "Futura", "Arial", sans-serif;
 		color: #fff;
 		font-weight: 500;
 		text-decoration: none;
 		outline: none;
 	}
 	#mainnav ul li a:hover {
-		color: #d65050;
+		color: #00A7FF;
 	}
 	#mainnav ul ul a {
 		width: 180px;
-		font-family: "Source Sans Pro", sans-serif !important;
+		font-family: "Futura", "Arial", sans-serif !important;
 	}
 	#mainnav > ul > li:last-child {
 		padding-right: 0;
@@ -950,7 +955,7 @@ Mobile navigation
 		float: right;
 		font-size: 28px;
 		font-family: "FontAwesome";
-		color: #fff;
+		color: #1a96f3;
 		text-align:center;
 		width: 28px;
 		height: 28px;
@@ -1174,30 +1179,7 @@ Hero section
 	}
 .text-slider {
   position: relative;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInRightBig;
-  animation-name: fadeInRightBig;
 }
-@-webkit-keyframes fadeInRightBig {
-  from {
-    right: -1200px;
-  }
-  to {
-    right: 0;
-  }
-}
-@keyframes fadeInRightBig {
-  from {
-    right: -1200px;
-  }
-  to {
-    right: 0;
-  }
-}
-
 .slide-inner {
 	position: absolute;
 	top: 50%;
@@ -1213,6 +1195,7 @@ Hero section
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
+	overflow: hidden;
 }
 .header-slider {
 	overflow: hidden;
@@ -1267,7 +1250,7 @@ Blog
 --------------------------------------------------------------*/
 	.content-area .post-wrap,
 	.contact-form-wrap {
-		padding-right: 20px;
+		/* padding-right: 20px; */
 	}
 	.content-area .hentry {
 		position: relative;
@@ -1703,7 +1686,7 @@ Portfolio single
 		background-color: #f7f7f7;
 		border: 1px solid #eee;
 		padding: 25px 25px 40px;
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 	}
 	.portfolio-info h5 {
 		margin: 0 0 15px;
@@ -1802,7 +1785,7 @@ Bottom
 	.site-footer {
 		background-color: #1c1c1c;
 		line-height: 35px;
-		padding: 15px 0;
+		padding: 40px 0;
 	}
 	.site-footer,
 	.site-footer a {
@@ -2007,7 +1990,7 @@ Panels
 	}
 	.roll-counter .name-count,
 	.roll-counter .numb-count {
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 	}
 	.roll-counter .name-count {
 		font-size: 14px;
@@ -2123,7 +2106,7 @@ Panels
 	margin-right: 15px;
 }
 .sydney_contact_info_widget div {
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 /* Icon List
 -------------------------------------------------------------- */
@@ -2188,10 +2171,9 @@ Panels
 	.roll-button {
 		position: relative;
 		display: inline-block;
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 		font-size: 13px;
 		line-height: 24px;
-		font-weight: 700;
 		padding: 12px 35px;
 		color: #fff;
 		text-transform: uppercase;
@@ -2305,7 +2287,7 @@ Panels
 	.project-filter li a {
 	    color: #767676;
 	    display: block;
-	    font-family: "Raleway",sans-serif;
+	    font-family: "Futura", "Arial", sans-serif;
 	    font-size: 13px;
 	    font-weight: 600;
 	    outline: 0;
@@ -2490,7 +2472,7 @@ Panels
 		color: inherit;
 	}	
 	.roll-testimonials .name {
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 		font-size: 18px;
 		font-weight: 500;
 	}
@@ -2722,7 +2704,7 @@ Panels
 		margin-right: 2px;
 	}
 	.roll-tabs .menu-tab li a {
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 		font-size: 14px;
 		font-weight: 500;
 		display: block;
@@ -2809,7 +2791,7 @@ Panels
 		text-align: center;
 	}
 	.roll-team .team-item .team-pop .name {
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 		font-size: 16px;
 		font-weight: 600;
 		color: #fff;
@@ -2911,7 +2893,7 @@ Panels
 		text-align: center;
 	}
 	.roll-team .team-content .name {
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 		font-size: 16px;
 		font-weight: 600;
 		padding: 12px 0 2px;
@@ -3070,7 +3052,7 @@ Panels
 		background-color: #d65050;
 	}
 	.roll-testimonials .name {
-		font-family: "Raleway", sans-serif;
+		font-family: "Futura", "Arial", sans-serif;
 		font-size: 18px;
 		font-weight: 500;
 		color: #d65050;
@@ -3410,7 +3392,7 @@ div[class*="elementor-widget-wp-widget-sydney"] h5 {
 	}
 	@media only screen and (max-width: 1024px) {
 		.site-header.fixed {
-			position: static !important;
+			position: fixed !important;
 		}		
 		.slides-container .slide-item,
 		.panel-row-style {
@@ -3431,7 +3413,7 @@ div[class*="elementor-widget-wp-widget-sydney"] h5 {
 		}
 		.site-header {
 			position: static;
-			background-color: rgba(0,0,0,0.9);
+			background-color: rgba(255,255,255,0.9);
 		}
 		.header-clone {
 			display: none;
@@ -3661,12 +3643,655 @@ div[class*="elementor-widget-wp-widget-sydney"] h5 {
 	margin-right: -182px;
 }
 
-.wpcf7-form-control {
-	border-radius: 50px!important;
-	padding: 12px 48px!important;
+#sidebar-footer {
+	padding-top: 300px;
+}
+
+#sidebar-footer .wpcf7-form-control {
+	border-radius: 50px;
+	padding: 12px 68px;
+	text-transform: initial;
+	outline: none;
+	font-weight: initial;
+}
+
+#sidebar-footer *:not([type=submit]).wpcf7-form-control {
+	background-color: rgba(255,255,255,0.3);
+	border-color: transparent;
+	width: 75%;
+	resize: none;
+	color: #9a9a9a;
 }
 
 #sidebar-footer .contact-email .fa-envelope:before {
 	content: '';
-	background-image: url('./../images/');
+	background-image: url('./../sydney/images/svg-icon-email.png');
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+}
+
+#sidebar-footer .contact-phone .fa-phone:before {
+	content: '';
+	background-image: url('./../sydney/images/svg-icon-phone.png');
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+}
+
+#sidebar-footer .contact-address .fa-home:before {
+	content: '';
+	background-image: url('./../sydney/images/svg-icon-address.png');
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+}
+
+.footer-widgets .sydney_contact_info_widget .widget-title {
+	text-transform: initial;
+	font-weight: 300;
+	padding-bottom: 35px;
+	font-size: 32px;
+	margin: 0;
+}
+
+#sidebar-footer .sidebar-column:first-child .widget_text {
+	padding-top: 0;
+	margin: 0;
+}
+
+#sidebar-footer .sidebar-column:first-child .widget_text .widget-title {
+	font-size: 58px;
+	white-space: nowrap;
+	text-transform: initial;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	font-weight: 300;
+	top: -175px;
+}
+
+.vertical-align {
+	display: flex;
+	align-items: center;
+}
+
+#quemsomos-section {
+	background-color: #18B0F6;
+	padding-left: 150px!important;
+	padding-right: 150px!important;
+}
+
+#produtos-section,
+#servicos-section {
+	background-color: #F9FAFB;
+	padding-left: 150px!important;
+	padding-right: 150px!important;
+}
+
+#produtos-section .widget-title {
+	text-transform: initial;
+	color: #9A9A9A!important;
+	font-weight: 300;
+}
+
+#produtos-section .widget-title:after {
+	display: none;
+}
+
+#produtos-section .roll-button.more-button {
+	border-radius: 50px;
+	padding: 12px 68px;
+	text-transform: initial;
+	outline: none;
+	margin-top: 100px;
+}
+
+#produtos-section .roll-button.more-button br {
+	display: none;
+}
+
+#produtos-section #cabecalho-produtos-section .textwidget {
+	text-align: center;
+	margin: 75px 0;
+}
+
+#produtos-section .service,
+#servicos-section .service .roll-icon-box {
+	background-color: #fff;
+	border-radius: 25px;
+	padding: 2rem;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+	-webkit-transition: all 0.3s ease-in-out;
+		   -moz-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			 -o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+}
+
+#servicos-section .service .roll-icon-box:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+#servicos-section .widget-title {
+	text-transform: initial;
+	color: #9A9A9A!important;
+	font-weight: 300;
+	text-align: left;
+}
+
+#servicos-section .widget-title b {
+	font-weight: 700;
+}
+
+#servicos-section .widget-title:after {
+	display: none;
+}
+
+#imagem-servicos-section {
+	margin-left: -150px;
+	margin-top: 100px;
+}
+
+#servicos-section .service .service-thumb {
+	display: none;
+}
+
+#servicos-section .service .roll-icon-box > p {
+	display: none;
+}
+
+#servicos-section .service .roll-icon-box .content h3 {
+	text-align: left;
+	font-size: 28px;
+	color: #6E6E6E!important;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+#servicos-section .service .roll-icon-box .content .text {
+	text-align: left;
+	display: flex;
+	height: 100px;
+	align-items: center;
+}
+
+#servicos-section .service .roll-icon-box .content .saiba-mais-servicos {
+	margin-top: 15px;
+	display: block;
+	text-align: left;
+}
+
+#slideshow {
+	height: 700px!important;
+	padding-top: 175px;
+}
+
+.slides-control {
+	position: initial!important;
+	width: 100%!important;
+	left: initial!important;
+}
+
+#slideshow .slide-item {
+	width: 100%!important;
+	background-position: initial!important;
+	position: initial!important;
+	left: initial!important;
+	display: flex!important;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.slide-inner {
+	width: 45%;
+	text-align: left!important;
+	position: initial;
+	min-height: auto;
+	transform: none;
+	top: initial;
+	display: initial!important;
+	/* float: left; */
+}
+
+.slide-image-murilo {
+	display: block!important;
+	width: 55%!important;
+	position: initial!important;
+	height: auto!important;
+	/* float: right; */
+}
+
+.slide-inner .maintitle:after {
+	display: none;
+}
+.slide-inner .maintitle {
+	text-shadow: none;
+	color: #9A9A9A!important;
+	font-weight: normal!important;
+	font-size: 32px!important;
+	line-height: 1.5;
+}
+.slide-inner .subtitle {
+	text-shadow: none;
+	font-size: initial!important;
+	color: #9A9A9A!important;
+	width: 75%;
+	line-height: 1.5;
+}
+
+.roll-button.button-slider {
+	border-radius: 50px;
+	padding: 12px 68px;
+	text-transform: initial;
+	outline: none;
+	font-weight: initial;
+}
+
+.sydney-hero-area {
+	background-image: url('./images/EfeitoRosa.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+#menu-nav-menu {
+	display: flex;
+	align-items: center;
+}
+
+#menu-nav-menu .menu-item:last-child > a {
+	background-color: #00A7FF;
+	border-radius: 50px;
+	padding: 12px 48px;
+	border: solid thin #00A7FF;
+}
+
+#menu-nav-menu .menu-item:last-child > a:hover {
+	background-color: transparent;
+	color: #00A7FF;
+}
+
+#produtos-section .service .list-item {
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+}
+
+#produtos-section .service .list-item > p {
+	display: none;
+}
+
+#produtos-section .service .list-item .service-thumb {
+	-ms-flex: 0 0 30%;
+	flex: 0 0 30%;
+	max-width: 30%;
+	margin: 0;
+	padding: 0 30px;
+}
+#produtos-section .service .list-item .content {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 0 50px;
+}
+#produtos-section .service .list-item .content h3 {
+	font-size: 28px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+#produtos-section .service .list-item .content h3 a {
+	color: #6E6E6E!important;
+}
+
+.seta-para-direita {
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	max-width: 100%;
+	text-align: right;
+	padding: 0 30px;
+}
+.seta-para-direita img {
+	max-width: 50%;
+}
+
+#produtos-section .widget_sydney_services_type_b .service {
+	position: relative;
+	margin-bottom: 50px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+		   -moz-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			 -o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+}
+#produtos-section .widget_sydney_services_type_b .service:hover {
+	box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+#produtos-section .widget_sydney_services_type_b .service > a {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.site-header.float-header {
+	background-color: rgba(255, 255, 255, 0.9)!important;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.site-header.float-header #menu-nav-menu .menu-item > a {
+	color: #9a9a9a;
+}
+
+.site-header.float-header #menu-nav-menu .menu-item > a:hover {
+	color: #ff0f7a;
+}
+
+.site-header.float-header #menu-nav-menu .menu-item:last-child > a {
+	background-color: #ff0f7a;
+	border-color: #ff0f7a;
+	color: #fff;
+}
+
+.site-header.float-header #menu-nav-menu .menu-item:last-child > a:hover {
+	background-color: transparent;
+	color: #ff0f7a;
+}
+
+.site-header.float-header .site-logo {
+	max-height: 75px;
+}
+
+#quemsomos-section .widget-title:after {
+	display: none;
+}
+
+#quemsomos-section .widget-title {
+	text-transform: initial;
+	color: #fff!important;
+	font-weight: normal;
+}
+
+#quemsomos-section * {
+	text-align: center!important;
+}
+
+#quemsomos-section .widget-title {
+	margin-bottom: 30px;
+}
+
+#logo-branco-quem-somos {
+	margin-bottom: 30px;
+}
+
+#texto-quem-somos {
+	width: 75%;
+	margin: auto;
+}
+
+#texto-quem-somos .textwidget {
+	font-size: 22px;
+}
+
+#mainnav ul li a {
+	font-size: 16px!important;
+}
+
+#quemsomos-section:before,
+#quemsomos-section:after {
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: '';
+	position: absolute;
+	height: 100%;
+}
+
+#quemsomos-section:before {
+	left: 0;
+	top: 0;
+	width: 700px;
+	background-image: url('./../sydney/images/efeito-quemsomos-esquerda.png');
+	background-position: top left;
+}
+
+#quemsomos-section:after {
+	right: 0;
+	bottom: 0;
+	width: 300px;
+	background-image: url('./../sydney/images/efeito-quemsomos-direita.png');
+	background-position: bottom right;
+}
+
+#page #content {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#page #content .content-wrapper {
+	padding-top: 0;
+}
+.entry-header {
+	text-align: center;
+	padding: 70px 0;
+	background-color: #ff0f7a;
+	margin-bottom: 0;
+}
+.entry-header .title-post.entry-title {
+	color: #fff;
+	font-weight: normal;
+	font-size: 52px;
+}
+
+.page-template-default #mainnav ul li a,
+.services-template-default #mainnav ul li a {
+	color: #9a9a9a;
+}
+
+.page-template-default #mainnav ul li:last-child a {
+	color: #fff;
+}
+
+.page-template-default #mainnav ul li:last-child a,
+.services-template-default #mainnav ul li:last-child a {
+	color: #fff;
+}
+
+.produtos-section-page {
+	background: none!important;
+}
+
+.mapa-contato {
+	margin-top: -30px;
+	margin-bottom: -75px;
+}
+
+.mapa-contato iframe {
+	width: 100%;
+}
+
+.servicos-section-page {
+	background-color: #fff!important;
+}
+
+#servicos-section.servicos-section-page {
+	padding-top: 15px!important;
+	padding-bottom: 0!important;
+}
+
+#servicos-widget-page {
+	margin-top: 50px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.services-template-default .entry-header {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.services-template-default .entry-thumb img {
+	width: 100%;
+}
+
+.page-template #mainnav ul li.active a,
+.page-template-default #mainnav ul li.active a,
+.services-template-default #mainnav ul li.active a {
+	font-weight: bold!important;
+}
+
+@media only screen and (max-width: 767px) {
+	#sidebar-footer .sidebar-column:first-child .widget_text .widget-title {
+		white-space: initial;
+		position: initial;
+		font-size: 48px;
+	}
+	.vertical-align {
+		flex-direction: column;
+	}
+	#produtos-section .service .list-item {
+		flex-direction: column;
+	}
+	#quemsomos-section:before,
+	#quemsomos-section:after {
+		width: 100%;
+		z-index: -1;
+	}
+	#sidebar-footer {
+		padding-top: 30px;
+	}
+	#produtos-section,
+	#servicos-section,
+	#quemsomos-section {
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+
+	#produtos-section .service .list-item .service-thumb,
+	#produtos-section .service .list-item .content {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.site-header .row {
+		display: flex;
+	}
+	.btn-menu {
+		color: #18b0f6!important;
+		margin-right: 30px;
+	}
+	.site-header .col-md-8.col-sm-4.col-xs-12 {
+		position: static;
+	}
+	#mainnav-mobi {
+		left: 0;
+		top: 65px;
+		background-color: #343a40;
+		box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);	
+	}
+	.float-header #mainnav-mobi {
+		top: 60px;
+	}
+	#mainnav-mobi ul {
+		padding: 15px 0;
+	}
+	#mainnav-mobi ul li {
+		padding: 0 15px;
+	}
+	#mainnav-mobi ul li {
+		border-color: #30353b;
+	}
+	#menu-nav-menu .menu-item:last-child > a {
+		margin-top: 15px;
+	}
+	#slideshow {
+		padding-top: 0;
+	}
+	.slide-inner {
+		width: 100%;
+		text-align: center!important;
+	}
+	#slideshow .slide-item {
+		flex-direction: column-reverse;
+	}
+	.slide-image-murilo {
+		display: none!important;
+	}
+	.site-header,
+	.site-header.float-header {
+		padding: 0;
+	}
+	.sydney-hero-area {
+		padding-top: 90px;
+	}
+	.slide-inner .subtitle {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.roll-button.button-slider {
+		margin-bottom: 30px;
+	}
+	#imagem-servicos-section {
+		margin-top: 30px;
+		margin-left: 0;
+	}
+	#servicos-section {
+		padding-top: 30px!important;
+	}
+	#servicos-section .widget-title {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	#servicos-section .textwidget {
+		text-align: center;
+	}
+	#sidebar-footer *:not([type=submit]).wpcf7-form-control,
+	#sidebar-footer [type=submit] {
+		width: 100%;
+	}
+	.footer-widgets {
+		padding: 0;
+	}
+	#produtos-section {
+		padding: 0!important;
+		margin-bottom: -15px;
+	}
+	#produtos-section .roll-button.more-button {
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+	#produtos-section .service .list-item .content {
+		padding: 0 15px;
+	}
+	.seta-para-direita {
+		text-align: center;
+		margin-top: 15px;
+	}
+	.entry-header {
+		padding: 30px 0;
+	}
+	#produtos-section #cabecalho-produtos-section .textwidget {
+		margin: 0;
+	}
+	.mapa-contato {
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: -90px;
+	}
+	.meta-post {
+		display: none;
+	}
+	#produtos-section .widget-title {
+		margin-top: 50px;
+	}
 }

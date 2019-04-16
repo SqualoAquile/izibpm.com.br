@@ -55,7 +55,9 @@
 	<?php do_action('sydney_after_header'); ?>
 
 	<div class="sydney-hero-area">
-		<?php sydney_slider_template(); ?>
+		<div class="container">
+			<?php sydney_slider_template(); ?>
+		</div>
 		<div class="header-image">
 			<?php sydney_header_overlay(); ?>
 			<img class="header-inner" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>">
@@ -68,5 +70,5 @@
 	<?php do_action('sydney_after_hero'); ?>
 
 	<div id="content" class="page-wrap">
-		<div class="container content-wrapper">
+		<div class="container-fluid content-wrapper">
 			<div class="row">	

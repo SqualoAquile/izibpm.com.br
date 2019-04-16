@@ -68,7 +68,6 @@ function sydney_slider_template() {
         $speed = 0;
     }
     ?>
-
     <div id="slideshow" class="header-slider" data-speed="<?php echo esc_attr($speed); ?>" data-mobileslider="<?php echo esc_attr($mobile_slider); ?>">
         <div class="slides-container">
 
@@ -78,10 +77,11 @@ function sydney_slider_template() {
 
                 $image_alt = sydney_get_image_alt( $image );
         		?>
-                <div class="slide-item slide-item-<?php echo $c; ?>" style="background-image:url('<?php echo esc_url( $image ); ?>');">
+                <div class="slide-item slide-item-<?php echo $c; ?>">
                     <img class="mobile-slide preserve" src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $image_alt ); ?>"/>
+                    <img class="slide-image-murilo wow animated fadeInUp" src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $image_alt ); ?>"/>
                     <div class="slide-inner">
-                        <div class="contain animated fadeInRightBig text-slider">
+                        <div class="contain wow animated fadeInLeft text-slider">
                         <h2 class="maintitle"><?php echo wp_kses_post( $titles['slider_title_' . $c] ); ?></h2>
                         <p class="subtitle"><?php echo esc_html( $subtitles['slider_subtitle_' . $c] ); ?></p>
                         </div>
@@ -116,7 +116,7 @@ function sydney_slider_button() {
     }
 
     if ($slider_button) {
-        return '<a href="' . esc_url($slider_button_url) . '" class="roll-button button-slider">' . esc_html($slider_button) . '</a>';
+        return '<a href="' . esc_url($slider_button_url) . '" class="roll-button button-slider animated fadeInLeft wow">' . esc_html($slider_button) . '</a>';
     }
 
 }
@@ -134,8 +134,8 @@ function sydney_stop_text() {
     ?>    
     <div class="slide-inner text-slider-stopped">
         <div class="contain text-slider">
-            <h2 class="maintitle"><?php echo esc_html($slider_title_1); ?></h2>
-            <p class="subtitle"><?php echo esc_html($slider_subtitle_1); ?></p>
+            <h2 class="maintitle"><?php echo wp_kses_post($slider_title_1); ?></h2>
+            <p class="subtitle"><?php echo wp_kses_post($slider_subtitle_1); ?></p>
         </div>
         <?php echo sydney_slider_button(); ?>
     </div>   

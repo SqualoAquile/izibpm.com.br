@@ -98,7 +98,7 @@ function sydney_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
+		'before_title'  => '<h3 class="widget-title wow animated fadeInUp">',
 		'after_title'   => '</h3>',
 	) );
 
@@ -111,7 +111,7 @@ function sydney_widgets_init() {
 			'description'   => '',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
+			'before_title'  => '<h3 class="widget-title wow animated fadeInUp">',
 			'after_title'   => '</h3>',
 		) );
 	}
@@ -169,18 +169,23 @@ if ( ! defined( 'ELEMENTOR_PARTNER_ID' ) ) {
  */
 function sydney_scripts() {
 
-	wp_enqueue_style( 'sydney-fonts', esc_url( sydney_google_fonts() ), array(), null );
+	// wp_enqueue_style( 'sydney-fonts', esc_url( sydney_google_fonts() ), array(), null );
 
 	wp_enqueue_style( 'sydney-style', get_stylesheet_uri(), '', '20180710' );
 
 	wp_enqueue_style( 'sydney-font-awesome', get_template_directory_uri() . '/fonts/font-awesome.min.css' );
+	
+	wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/css/animate.min.css' );
 
 	wp_enqueue_style( 'sydney-ie9', get_template_directory_uri() . '/css/ie9.css', array( 'sydney-style' ) );
 	wp_style_add_data( 'sydney-ie9', 'conditional', 'lte IE 9' );
 
 	wp_enqueue_script( 'sydney-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'),'', true );
 
+	wp_enqueue_script( 'wow-js', get_template_directory_uri() . '/js/wow.min.js', array('jquery'),'', true );
+	
 	wp_enqueue_script( 'sydney-main', get_template_directory_uri() . '/js/main.min.js', array('jquery'),'20180716', true );
+	
 
 	wp_enqueue_script( 'sydney-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -473,3 +478,12 @@ function sydney_welcome_admin_notice() {
 }
 add_action( 'admin_init', array( 'PAnD', 'init' ) );
 add_action( 'admin_notices', 'sydney_welcome_admin_notice' );
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}

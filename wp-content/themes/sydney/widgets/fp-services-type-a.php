@@ -101,7 +101,7 @@ class Sydney_Services_Type_A extends WP_Widget {
 						<?php else : ?>
 						<div class="service col-md-6">
 						<?php endif; ?>
-							<div class="roll-icon-box">
+							<div class="roll-icon-box wow animated fadeInUp">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<div class="service-thumb">
 										<?php if ($link) : ?>
@@ -127,11 +127,14 @@ class Sydney_Services_Type_A extends WP_Widget {
 											<?php the_title(); ?>
 										<?php endif; ?>
 									</h3>
-									<?php if ( $content_excerpt == 'fullcontent' ) : ?>								
-										<?php the_content(); ?>
-									<?php else : ?>
-										<?php the_excerpt(); ?>
-									<?php endif; ?>
+									<div class="text">
+										<?php if ( $content_excerpt == 'fullcontent' ) : ?>								
+											<?php the_content(); ?>
+										<?php else : ?>
+											<?php the_excerpt(); ?>
+										<?php endif; ?>
+									</div>
+									<a class="saiba-mais-servicos" href="<?php echo esc_url($link); ?>">Saiba Mais</a>
 								</div><!--.info-->	
 							</div>
 						</div>

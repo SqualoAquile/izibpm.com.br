@@ -20,8 +20,7 @@
 	?>
 
 	<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
-		<h2>Vamos Conversar?</h2>
-		<div class="container">
+		<div class="container vertical-align">
 			<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
 				<div class="sidebar-column <?php echo $cols; ?>">
 					<?php dynamic_sidebar( 'footer-1'); ?>
